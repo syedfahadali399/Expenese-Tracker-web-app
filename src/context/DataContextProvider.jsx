@@ -41,7 +41,6 @@ const DataContextProvider = ({children}) => {
     localStorage.setItem("date", JSON.stringify(date))
     localStorage.setItem("activeTab", JSON.stringify(activeTab))
   }, [totalMoney, totalIncome, totalExpense, data, date, activeTab])
-    console.log(data);
 
     return(
         <DataContext.Provider value={{data, setData, totalMoney, setTotalMoney, totalIncome, setTotalIncome, totalExpense, setTotalExpense, activeTab, setactiveTab, date, setDate}}>
